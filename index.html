@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>Document</title>
+
+    <style>
+        .divpractice {
+            width: 100%;
+            height: 500px;
+
+            background-color: green;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .divpractice > .First {
+            width: 40%;
+            height: 200px;
+
+            background-color: red;
+        }
+
+        .divpractice > .Second {
+            width: 40%;
+            height: 300px;
+
+            background-color: blue;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .divpractice > .Second > button {
+            margin-right: 5px;
+            padding: 10px;
+
+        }
+    </style>
+
+    <script>
+        function hey() {
+            alert('hello!')
+        }
+    </script>
+</head>
+<body>
+    <h1>This is practice page</h1>
+    <h2>This is subtitle</h2>
+    <input type="text" id="input_box">
+
+    <div class="divpractice">
+        <div class="First">First div</div>
+        <div class="Second" id="second_box">
+            <button onclick="hey()">First button</button>
+            <button>Second button</button>
+            <button>Third button</button>
+        </div>
+    </div>
+</body>
+</html>
